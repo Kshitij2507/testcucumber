@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-11-26T03:52:32.277Z",
+        "line": 4,
+        "name": "Add two numbers",
+        "description": "",
+        "id": "test-calculator;add-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1140500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter 20 in the calculator",
+            "match": {
+              "location": "calculator2.i_enter_50()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 158200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I press add",
+            "match": {
+              "location": "calculator2.press_add()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have entered 20 in the calculator",
+            "match": {
+              "location": "calculator2.entered_50()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press equal symbol",
+            "match": {
+              "location": "calculator2.press_equal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The result should be 40 on the screen",
+            "match": {
+              "location": "calculator2.result_is_100()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Calculator",
+    "description": "This file describes calculater Functionality",
+    "id": "test-calculator",
+    "keyword": "Feature",
+    "uri": "classpath:package2/calculator2.feature",
+    "tags": []
+  }
+]
